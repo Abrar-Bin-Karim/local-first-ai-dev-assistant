@@ -4,14 +4,13 @@ A local-first AI-powered developer assistant that helps engineers understand rep
 
 ## Features
 
-- Repository understanding
-- Git history reasoning
-- Log analysis
-- Shell explanation
-- Budget controls
+* Repository understanding
+* Git history reasoning
+* Log analysis
+* Shell explanation
+* Budget controls
 
 ## Status
 
-Week 1: Project scaffold
-=======
-# local-first-ai-dev-assistant
+# Week 1: Project scaffold
+
