@@ -1,0 +1,17 @@
+[project]
+name = "assistant"
+version = "0.1.0"
+description = "Local First AI Developer Assistant"
+requires-python = ">=3.10"
+
+dependencies = [
+    "typer",
+    "rich",
+    "pyyaml"
+]
+
+[project.scripts]
+assistant = "assistant.cli:app"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
