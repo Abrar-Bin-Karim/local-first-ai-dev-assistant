@@ -12,5 +12,5 @@ A local-first AI-powered developer assistant that helps engineers understand rep
 
 ## Status
 
-# Week 1: Project scaffold
 
+# Week 1: Project scaffold
