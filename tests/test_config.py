@@ -4,16 +4,9 @@ from pathlib import Path
 # Add the project root to Python path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.assistant.utils.ui import (
-    info, success, warning, error,
-    confirm_prompt, text_prompt
-)
-
-# Rest of your test code...
 import pytest
 import yaml
-from pathlib import Path
-from src.assistant.utils.config import (
+from assistant.utils.config import (
     load_config, 
     create_default_config, 
     save_config,

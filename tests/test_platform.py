@@ -1,17 +1,5 @@
-import sys
-from pathlib import Path
-
-# Add the project root to Python path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from src.assistant.utils.ui import (
-    info, success, warning, error,
-    confirm_prompt, text_prompt
-)
-
-# Rest of your test code...
 import pytest
-from src.assistant.utils.system_platform import (
+from assistant.utils.system_platform import (
     is_windows, is_linux, is_mac, 
     detect_shell, get_os, get_system_info
 )

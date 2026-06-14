@@ -57,6 +57,3 @@ def get_system_info():
         "machine": platform.machine(),
         "processor": platform.processor()
     }
-print(f'Is Windows: {is_windows()}'); 
-print(f'Shell: {detect_shell()}'); 
-print(f'System Info: {get_system_info()}')

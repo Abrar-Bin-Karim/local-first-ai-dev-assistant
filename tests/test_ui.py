@@ -1,46 +1,27 @@
-import sys
-from pathlib import Path
-
-# Add the project root to Python path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from src.assistant.utils.ui import (
-    info, success, warning, error,
-    confirm_prompt, text_prompt
-)
-
-# Rest of your test code...
 import pytest
-from src.assistant.utils.ui import (
-    info, success, warning, error,
-    confirm_prompt, text_prompt
-)
+from assistant.utils.ui import show_info, show_success, show_warning, show_error, show_header, show_table
 
-def test_imports():
-    """Test that all UI functions are importable"""
-    from src.assistant.utils.ui import console, header, divider
-    assert console is not None
-
-def test_info_message(capsys):
-    """Test info message display"""
-    info("Test info")
+def test_show_info(capsys):
+    show_info("test message")
     captured = capsys.readouterr()
-    assert "Test info" in captured.out
+    assert "test message" in captured.out
 
-def test_success_message(capsys):
-    """Test success message display"""
-    success("Test success")
+def test_show_success(capsys):
+    show_success("done")
     captured = capsys.readouterr()
-    assert "Test success" in captured.out
+    assert "done" in captured.out
 
-def test_warning_message(capsys):
-    """Test warning message display"""
-    warning("Test warning")
+def test_show_warning(capsys):
+    show_warning("careful")
     captured = capsys.readouterr()
-    assert "Test warning" in captured.out
+    assert "careful" in captured.out
 
-def test_error_message(capsys):
-    """Test error message display"""
-    error("Test error")
+def test_show_error(capsys):
+    show_error("fail")
     captured = capsys.readouterr()
-    assert "Test error" in captured.out
+    assert "fail" in captured.out
+
+def test_show_header(capsys):
+    show_header("Header")
+    captured = capsys.readouterr()
+    assert "Header" in captured.out
