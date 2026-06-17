@@ -53,7 +53,6 @@ The project is read-only by default, making it useful for safely analyzing codeb
 
 ## Project Structure
 
-```text
 local-first-ai-dev-assistant/
 ├── src/
 │   └── assistant/
@@ -74,6 +73,7 @@ local-first-ai-dev-assistant/
 ├── pyproject.toml
 ├── LICENSE
 └── README.md
+
 Installation
 Clone the repository:
 git clone https://github.com/Abrar-Bin-Karim/local-first-ai-dev-assistant.git
@@ -124,4 +124,3 @@ This project is licensed under the MIT License.
 <div align="center">
 Built with Python, Typer, and Rich.
 </div>
-```
